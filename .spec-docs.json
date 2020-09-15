@@ -1,4 +1,8 @@
 {
   "apiSpecPath": "openapi/task_execution_service.openapi.yaml",
   "redocTheme": "ga4gh"
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> master
