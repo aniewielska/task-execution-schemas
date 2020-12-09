@@ -1,4 +1,4 @@
-<img src="https://www.ga4gh.org/wp-content/themes/GA4GH/dist/assets/gfx/GA-logo-horizontal-tag-RGB.svg" alt="GA4GH Logo" style="width: 400px;"/>
+<img src="https://www.ga4gh.org/wp-content/themes/ga4gh-theme/gfx/GA-logo-horizontal-tag-RGB.svg" alt="GA4GH Logo" style="width: 400px;"/>
 
 Task Execution Service (TES) API
 ======================================
@@ -188,3 +188,11 @@ To cancel a task, send an HTTP POST to the cancel endpoint:
 ```HTTP
 POST /v1/tasks/task-1234:cancel
 ```
+
+How to Contribute Changes
+-------------------------
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+If a security issue is identified with the specification, please send an email to security-notification@ga4gh.org detailing your concerns.
+
