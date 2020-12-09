@@ -33,9 +33,6 @@ and the [OpenAPI YAML description](openapi/task_execution_service.openapi.yaml).
 
 TES Compliant Implementations
 ------------------------------
-
-A stand-alone security review has been performed *on the* API. Nevertheless, *any implementation that is linked to from the documentation accompanying the API is done so* without any security guarantees. If you integrate this code into your application it is AT YOUR OWN RISK AND RESPONSIBILITY to arrange for an audit to ensure compliance with any applicable regulatory and security requirements, especially where personal data may be at issue.
-
 ### Client
 - [cwl-tes](https://github.com/ohsu-comp-bio/cwl-tes)
 - [Cromwell](https://cromwell.readthedocs.io/en/stable/backends/TES/)
@@ -45,6 +42,16 @@ A stand-alone security review has been performed *on the* API. Nevertheless, *an
 - [Funnel](https://ohsu-comp-bio.github.io/funnel/)
 - [TESK](https://github.com/EMBL-EBI-TSI/TESK)
 - [tes-azure](https://github.com/microsoft/tes-azure)
+
+### Compatibility Matrix
+
+> Compatibility is assumed based on available documentation and limited tests performed on latest versions of implementations available as of December 2020.
+
+|               | cwl-tes       | Cromwell  | Nextflow |
+| ------------- | ------------- | --------- | ---------|
+| Funnel        | [Compatible](https://github.com/ohsu-comp-bio/cwl-tes) | Compatible | [Compatible](https://www.nextflow.io/docs/latest/executor.html#ga4gh-tes) |
+| TESK          | [Compatible](https://github.com/ohsu-comp-bio/cwl-tes/pull/25) | [Compatible](https://cromwell.readthedocs.io/en/stable/backends/TES/) | [Compatible](https://github.com/EMBL-EBI-TSI/tesk-core/pull/19) |
+| tes-azure     | Not tested | [Potentially compatible](https://github.com/microsoft/tes-azure/blob/master/docs/USAGE.md#cromwell) | Not tested |
 
 
 TES Service Examples
@@ -195,7 +202,7 @@ POST /v1/tasks/task-1234:cancel
 Possible Future Enhancements
 ----------------------------
 
-* Integrate with GA4GH DRS to resolve input data source (possibly support for DRS URIs as permissible values of input URLs).
+* Integrate with GA4GH DRS to resolve input data source (possibly support for DRS URIs as permissible values of input URLs). 
 * Integrate with GA4GH TRS to resolve container images (possibly support for TRS URIs as permissible values of executor image names).
 
 
